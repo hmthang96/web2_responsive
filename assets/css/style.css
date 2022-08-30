@@ -130,7 +130,7 @@ a{
 /* main banner */
 .main-banner{
     min-height: 950px;
-    background-image: url('/assets/images/banner/banner_model.png'), url('/assets/images/banner/banner_background.png');
+    background-image: url('./assets/images/banner/banner_model.png'), url('./assets/images/banner/banner_background.png');
     background-repeat: no-repeat, no-repeat;
     background-size: auto 759px ,auto 100%;
     background-position: bottom 0 right 23.8%, center;
@@ -555,7 +555,6 @@ a{
     font-size: 14px;
     line-height: 2.1428;
     text-align: center;
-}
 }
 
 /* responsive */
