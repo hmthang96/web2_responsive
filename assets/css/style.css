@@ -5,7 +5,7 @@
 }
 
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: #111;
 }
 
@@ -72,6 +72,7 @@ a{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 0 15px;
 }
 
 .header-logo{
@@ -83,6 +84,8 @@ a{
 
 .site-header .header-navbar{
     /* padding: 0 15px; */
+    margin-left: -48px;
+    margin-top: 3px;
 }
 
 .site-header .header-navbar nav{
@@ -131,7 +134,7 @@ a{
 .main-banner{
     min-height: 950px;
     background-image: url('/assets/images/banner/banner_model.png'), url('/assets/images/banner/banner_background.png');
-    background-image: url(./web2_responsive/assets/images/banner/banner_model.png), url(./web2_responsive/assets/images/banner/banner_background.png);
+    /* background-image: url(./web2_responsive/assets/images/banner/banner_model.png), url(./web2_responsive/assets/images/banner/banner_background.png); */
 
     background-repeat: no-repeat, no-repeat;
     background-size: auto 759px ,auto 100%;
@@ -148,12 +151,15 @@ a{
     font-size: 60px;
     font-weight: 700;
     margin-bottom: -6px;
+    margin-left: -3px;
+    letter-spacing: -0.19px;
 }
 
 .main-banner .main-banner-slogan{
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 17px;
+    margin-left: -4px
 }
 
 .main-banner .main-banner-des{
@@ -161,6 +167,7 @@ a{
     font-weight: 400;
     line-height: 1.7142;
     margin-bottom: 55px;
+    letter-spacing: -0.0299px;
 }
 
 .main-banner .main-banner-shop_now a{
@@ -219,7 +226,7 @@ a{
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
-    margin: 22.5px 0 16.5px 0;
+    margin: 33.5px 0 30.5px 0;
 }
 
 .category-product .category-product-content_des{
@@ -253,13 +260,14 @@ a{
 .category-product .category-product-content_icon img{
     width: auto;
     max-width: 100%;
+    padding: 2px;
 
 }
 
 
 /* product */
 .product{
-    margin-top: 81px;
+    margin-top: 83px;
 }
 
 .product .product-tab a{
@@ -306,6 +314,7 @@ a{
 
 .product-list{
     display: none;
+    margin-top: 37px;
 }
 
 .product-list .product-item:hover{
@@ -318,12 +327,14 @@ a{
     line-height: 1.71428;
     font-weight: 400;
     color: #000;
+    margin-top: -6px;
 }
 
 .product-list .product-price{
     font-size: 14px;
     line-height: 1.71428;
     font-weight: 700;
+    margin-left: -1px;
 }
 
 .product-list .product-tool{
@@ -364,7 +375,7 @@ a{
     text-align: center;
 }
 .client-say-title{
-    margin-top: 89px;
+    margin-top: 91px;
     font-size: 36px;
     line-height: 1.2;
     font-weight: 700;
@@ -392,7 +403,7 @@ a{
 }
 
 .client-name{
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 18px;
     line-height: 1.6666;
     font-weight: 700;
@@ -401,7 +412,7 @@ a{
 
 .client-status{
     font-size: 14px;
-    margin-top: 7px;
+    margin-top: 6px;
     line-height: 1.6666;
     color: #777;
 }
@@ -439,6 +450,12 @@ a{
     content: '';
     position: absolute;
     /* border-top: 1px solid gray; */
+    top: 1.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    height: 0.2px;
+    background-color: grey;
 }
 
 .brand .brand-logo{
@@ -450,12 +467,12 @@ a{
 .brand .brand-logo img{
     width: auto;
     max-width: 90%;
-    min-width: 80%;
+    min-width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
 
-    transform:translate(-50%, -50%);
+    transform:translate(-52%, -47%);
 }
 
 .brand .brand-col{
@@ -467,8 +484,10 @@ a{
     box-sizing: border-box;
 }
 
+
 /* Background */
 .site-footer{
+    margin-top: 2px;
     background-color: #222222;
     color: #777;
 }
@@ -491,7 +510,7 @@ a{
 }
 
 .site-footer .footer-des{
-    margin-top: 26px;
+    margin-top: 34px;
 }
 
 
@@ -519,7 +538,7 @@ a{
     width: 100%;
     max-width: calc(300%/12);
     flex: 0 0 calc(300%/12);
-    padding: 0 15px;
+    padding: 80px 15px 0 15px;
     box-sizing: border-box;
 }
 
@@ -540,7 +559,7 @@ a{
 }
 
 .site-footer .footer-contact-us_list i{
-    margin-right: 15px;
+    margin-right: 11px;
 }
 .copyright{
     background-color: #000;
@@ -557,6 +576,18 @@ a{
     font-size: 14px;
     line-height: 2.1428;
     text-align: center;
+}
+
+.site-footer .row:after{
+    content: '';
+    position: absolute;
+    /* border-top: 1px solid gray; */
+    top: 1.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    height: 0.2px;
+    background-color: grey;
 }
 
 /* responsive */
